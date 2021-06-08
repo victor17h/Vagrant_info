@@ -10,7 +10,7 @@
 2. Run git bash as an administrator and enter the folder created. Then use `vagrant init` to start vagrant and be able to enter key information.
 3. Create a file called `vagrantfile` using nano with the following information:
 
-`Vagrant.configure("2") do |config|
+Vagrant.configure("2") do |config|
 
   config.vm.provider "virtualbox" do |v|
     v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
@@ -21,7 +21,7 @@
  # creating a virtual machine ubuntu 
  config.vm.network "private_network", ip: "192.168.10.100"
  
-end`
+end
 
 4. Once this file has been saved run the command `vagrant up`. This will boot up your virtual machine.
 5. Next enter virtual machine by using `vagrant ssh`.
