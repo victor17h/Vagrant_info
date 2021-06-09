@@ -42,3 +42,16 @@ end
 - To suspend vagrant `vagrant suspend`.
 
 
+## More commands
+
+- List of tasks in linux `top`.
+- to have root control `sudo su`, to avoid using sudo all the time. Use `exit` to escape root.
+- Use `history` to see all commands you have used.
+- Check system status using `sudo systemctl status nginx`. `Ctrl C` to exit.
+- Use `sudo systemctl stop nginx` to stop nginx service.
+- Restart the system by using `sudo systemctl restart nginx`
+- To stop the system use `sudo systemctl stop nginx`.
+- A file with called provision.sh with all the instructions can be created and then run all the instructions `sudo bash provision.sh`.
+- Use `sudo chmod +x provision.sh` to make it executable and then `sudo ./provision.sh`.
+- To check if it worked use `ls` or `ll` and the file should appear in other color.
+
