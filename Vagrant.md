@@ -2,7 +2,7 @@
 
 ## Install Vagrand
 
-- In order to install ruby, vagrant and virtual box follow this link: https://github.com/khanmaster/vb_vagrant_installtion
+- In order to install ruby, vagrant and virtual box follow this link: [here](https://github.com/khanmaster/vb_vagrant_installtion)
 
 ## Setting up virtual machine
 
@@ -10,6 +10,7 @@
 2. Run git bash as an administrator and enter the folder created. Then use `vagrant init` to start vagrant and be able to enter key information.
 3. Create a file called `vagrantfile` using nano with the following information:
 
+```
 Vagrant.configure("2") do |config|
 
   config.vm.provider "virtualbox" do |v|
@@ -22,7 +23,7 @@ Vagrant.configure("2") do |config|
  config.vm.network "private_network", ip: "192.168.10.100"
  
 end
-
+```
 4. Once this file has been saved run the command `vagrant up`. This will boot up your virtual machine.
 5. Next enter virtual machine by using `vagrant ssh`.
 6. Then update to the current version of linux by using `sudo apt-get update -y`.
